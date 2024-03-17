@@ -12,7 +12,8 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                sh 'sudo -u ubuntu /usr/local/bin/pm2 start /var/lib/jenkins/workspace/pro/node.js' 
+                sh "echo 'admin' | sudo -S -u ubuntu /usr/local/bin/pm2 start /var/lib/jenkins/workspace/pro/node.js"
+ 
             }
         }
     }
