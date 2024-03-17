@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                sh '/home/ubuntu/.nvm/versions/node/v20.11.1/bin/pm2 start /home/ubuntu/workspace/nodeeeejs/node.js' 
+                sh '/usr/local/bin/pm2 start /home/ubuntu/workspace/nodeeeejs/node.js' 
             }
         }
     }
