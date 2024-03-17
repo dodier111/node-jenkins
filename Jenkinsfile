@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                sh '/usr/local/bin/pm2 start /var/lib/jenkins/workspace/pro/node.js' 
+                sh 'sudo -u ubuntu /usr/local/bin/pm2 start /var/lib/jenkins/workspace/pro/node.js' 
             }
         }
     }
