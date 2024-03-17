@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'dock' 
+        label 'dock'
     }
     stages {
         stage('Checkout') {
@@ -24,6 +24,6 @@ pipeline {
         }
         failure {
             echo 'Build or deployment failed!'
-        }
-    }
+        }
+    }
 }
