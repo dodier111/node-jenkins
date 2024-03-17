@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-    }
+    agent any // This will allow Jenkins to execute the pipeline on any available agent
+
     stages {
         stage('Checkout') {
             steps {
@@ -25,4 +25,4 @@ pipeline {
             echo 'Build or deployment failed!'
         }
     }
-
+}
